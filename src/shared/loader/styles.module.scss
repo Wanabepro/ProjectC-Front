@@ -1,0 +1,50 @@
+.container {
+  overflow: hidden;
+}
+
+.loader {
+  position: relative;
+  border-radius: 50%;
+  background: conic-gradient(
+    at 50% 50%,
+    #ff6fed,
+    #6fffcc 50%,
+    transparent 50%,
+    transparent 75%,
+    #ffdd6f 75%,
+    #ff6fed 100%
+  );
+  animation: animate 0.8s ease-in-out infinite, change-color 2.4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes change-color {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  right: 10%;
+  bottom: 10%;
+  background: #fff;
+  border-radius: 50%;
+  z-index: 1;
+}

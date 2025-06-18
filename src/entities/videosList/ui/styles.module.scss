@@ -1,0 +1,44 @@
+.videos {
+  width: 100%;
+
+  &__item {
+    border-bottom: var(--border-default);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__link {
+    padding: 0.6rem 1.2rem;
+    text-align: left;
+    width: 100%;
+  }
+
+  &__delete {
+    width: 2.4rem;
+    height: 2.4rem;
+    position: relative;
+    font-size: 0;
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      width: 70%;
+      height: 3px;
+      border-radius: 1.5px;
+      background-color: #d40000;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+
+    &:before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &:after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+}

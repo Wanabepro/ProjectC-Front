@@ -1,0 +1,18 @@
+.progress {
+  --progress: 0%;
+  width: 50%;
+  height: 3.2rem;
+  border-radius: 3px;
+  background: linear-gradient(
+    to right,
+    #00bfff,
+    #00ffbf var(--progress),
+    var(--clr-light) var(--progress),
+    var(--clr-light)
+  );
+
+  text-align: center;
+  color: black;
+  font-size: 12px;
+  transition: all 1ms linear;
+}

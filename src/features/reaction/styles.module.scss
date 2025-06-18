@@ -1,0 +1,26 @@
+.reactions {
+  display: flex;
+  gap: 1.2rem;
+  button {
+    border-radius: 1.2rem;
+    padding: 0.6rem 2.4rem;
+    color: var(--clr-light);
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    background-color: var(--clr-gray);
+
+    img {
+      width: 2.4rem;
+      aspect-ratio: 1 / 1;
+    }
+  }
+
+  &__like:active {
+    background-color: var(--clr-dark-secondary);
+  }
+
+  &__dislike:active {
+    background-color: var(--clr-danger);
+  }
+}

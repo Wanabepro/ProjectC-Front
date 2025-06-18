@@ -1,0 +1,19 @@
+:root {
+  --clr-primary: #00bfff;
+  --clr-secondary: #00ffbf;
+  --clr-dark-secondary: #00e6ac;
+  --clr-danger: #de1a1a;
+  --clr-light: #fdfdff;
+  --clr-light-gray: #e7e6f7ff;
+  --clr-gray: #5d576b;
+  --clr-dark-gray: #211a1d;
+
+  --fs-tiny: 1rem;
+  --fs-small: 1.2rem;
+  --fs-normal: 1.6rem;
+  --fs-large: 3.8rem;
+
+  --gd-main: linear-gradient(to right, var(--clr-primary), var(--clr-secondary));
+
+  --border-default: 1px solid var(--clr-light-gray);
+}

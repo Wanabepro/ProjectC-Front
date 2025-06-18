@@ -1,0 +1,20 @@
+.form {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: fit-content;
+  gap: 1.6rem;
+
+  &__controls {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 3.2rem;
+    width: 100%;
+
+    // button {
+    //   width: 100%;
+    //   background-color: var(--clr-danger);
+    //   border-radius: 1.6rem;
+    //   color: var(--clr-light);
+    // }
+  }
+}

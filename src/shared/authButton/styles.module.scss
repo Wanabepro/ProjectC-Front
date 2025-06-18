@@ -1,0 +1,50 @@
+.button {
+  position: relative;
+  height: fit-content;
+  padding: 0.8rem 2.2rem 0.8rem 2.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 1.2rem;
+  color: var(--clr-light);
+  overflow: hidden;
+  transform: scale(1);
+  transition: all 0.2s ease-out;
+
+  &:hover {
+    padding: 0.8rem 2.2rem 0.8rem 4rem;
+    transform: scale(1.1);
+  }
+
+  &__before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    padding: 0.5rem 0;
+    transition: transform 0.2s ease-out;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  &:hover &__before {
+    transform: translateX(1%);
+  }
+}
+
+.login {
+  background-color: var(--clr-dark-secondary);
+  font-weight: 600;
+}
+
+.logout {
+  background-color: var(--clr-danger);
+  font-weight: 500;
+}

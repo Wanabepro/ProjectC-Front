@@ -1,0 +1,16 @@
+.button {
+  display: block;
+  padding: 1.2rem 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 24px;
+  width: 100%;
+  margin: 0 auto;
+
+  &:disabled {
+    background: var(--clr-light-gray);
+    color: var(--clr-gray);
+    cursor: not-allowed;
+  }
+}

@@ -1,0 +1,17 @@
+.player {
+  width: 80%;
+
+  &__container {
+    width: 100%;
+    display: flex;
+    gap: 2.4rem;
+  }
+
+  &__video {
+    width: 100%;
+  }
+}
+
+.list {
+  width: calc(20% - 2.4rem);
+}

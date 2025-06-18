@@ -1,0 +1,118 @@
+.dragArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: var(--border-default);
+  border-radius: 3.2rem;
+  position: relative;
+  overflow: hidden;
+  padding: 1.2rem 2.4rem;
+
+  &--hovered {
+    background-color: var(--clr-light-gray);
+  }
+
+  input {
+    appearance: none;
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+}
+
+.canvasContainer {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    position: relative;
+
+    canvas {
+      max-height: 100%;
+      max-width: 100%;
+      border-radius: 2.2rem;
+    }
+  }
+
+  .delete {
+    position: absolute;
+    z-index: 100;
+    top: 1.6rem;
+    right: 1.6rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 5px;
+    font-size: 0;
+    background-color: #00000055;
+    transition: all 0.1s ease-out;
+
+    &:hover {
+      background-color: #00000088;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 80%;
+      height: 3px;
+      border-radius: 1px;
+      background-color: var(--clr-light-gray);
+      opacity: 0.8;
+      transition: all 0.1s ease-out;
+    }
+
+    &:hover::before,
+    &:hover::after {
+      opacity: 1;
+      background-color: var(--clr-danger);
+    }
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+}
+
+.info {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  font-size: 1.6rem;
+  color: var(--clr-gray);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  img {
+    width: 5rem;
+  }
+
+  p:last-child {
+    font-size: 1.2rem;
+    color: var(--clr-light-gray);
+    margin-top: 0.5rem;
+  }
+}
+
+.shown {
+  opacity: 1;
+}

@@ -1,0 +1,13 @@
+.delete {
+  background-color: var(--clr-danger);
+  color: var(--clr-light);
+  background: linear-gradient(to right, #ff5e00, var(--clr-danger) 50%, var(--clr-danger));
+  background-size: 200% 100%;
+  transform: scale(1);
+  transition: all 0.2s ease-out;
+
+  &:not(:disabled):hover {
+    background-position: 100%;
+    transform: scaleY(1.02) scaleX(1.06);
+  }
+}

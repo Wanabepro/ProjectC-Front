@@ -1,0 +1,22 @@
+.logo {
+  display: flex;
+  width: fit-content;
+  padding-right: 1.2rem;
+  gap: 1.2rem;
+  align-items: center;
+  font-size: 3.6rem;
+  font-weight: 500;
+  color: transparent;
+  text-decoration: none;
+
+  img {
+    height: 4.8rem;
+  }
+
+  p {
+    background: var(--gd-main);
+    filter: brightness(90%);
+    line-height: 1.2;
+    background-clip: text;
+  }
+}

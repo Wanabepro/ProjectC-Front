@@ -1,0 +1,81 @@
+.container {
+  font-family: "Courier New", monospace;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--clr-dark-gray);
+  color: #34d399;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  code {
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+}
+
+.terminal-line {
+  display: block;
+  opacity: 0;
+  animation: showLine 0.5s forwards;
+
+  &:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+
+  &:nth-child(2) {
+    animation-delay: 1s;
+  }
+
+  &:nth-child(3) {
+    animation-delay: 1.5s;
+  }
+
+  &:nth-child(4) {
+    animation-delay: 2s;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  @keyframes showLine {
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+.typewriter {
+  margin-bottom: 3.2rem;
+  h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid #34d399;
+    animation: typing 2.5s steps(30, end), blink 0.75s step-end infinite;
+  }
+}
+
+.redText {
+  color: #f87171;
+}
+
+.blueText {
+  color: #bfdbfe;
+  margin-top: 3.2rem;
+}

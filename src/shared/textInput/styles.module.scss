@@ -1,0 +1,35 @@
+.textInput {
+  position: relative;
+
+  span {
+    position: absolute;
+    background: transparent;
+    top: 1.6rem;
+    left: 2.4rem;
+    color: var(--clr-gray);
+    font-size: 1.6rem;
+    transition: all 0.2s ease-out;
+  }
+
+  textarea {
+    height: 100%;
+  }
+
+  textarea,
+  input {
+    width: 100%;
+    border: var(--border-default);
+    padding: 1.6rem 3.2rem;
+    border-radius: 3.2rem;
+    overflow: hidden;
+    resize: none;
+  }
+
+  textarea:focus + span,
+  input:focus + span,
+  textarea:not(:empty) + span,
+  .dirty {
+    font-size: 1.2rem;
+    transform: translate(4%, -90%);
+  }
+}

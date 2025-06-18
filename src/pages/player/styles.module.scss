@@ -1,0 +1,35 @@
+.videoInfo {
+  margin-top: 2.4rem;
+  padding: 1.2rem 2.4rem;
+  border-radius: 2.4rem;
+  border: var(--border-default);
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.4rem;
+  }
+
+  &__headerInfo {
+    line-height: 1;
+    p:first-child {
+      display: flex;
+      align-items: center;
+      font-size: 1.8rem;
+    }
+  }
+
+  &__date {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--clr-gray);
+  }
+
+  &__heading {
+    margin-top: 3.6rem;
+  }
+
+  &__description {
+    margin-top: 0.6rem;
+  }
+}
